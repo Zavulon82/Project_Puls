@@ -1,8 +1,8 @@
 {
-  "name": "project_work",
+  "name": "pulse",
   "version": "1.0.0",
-  "description": "Hello",
-  "main": "index.js",
+  "description": "",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
