@@ -30,5 +30,16 @@
         color: rgb(255, 255, 255);
         font-size: 18px;
         font-weight: 700;
+
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 }
