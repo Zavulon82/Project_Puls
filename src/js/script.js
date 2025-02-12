@@ -1,11 +1,32 @@
-var name = "Ivan";
+$(document).ready(function () {
+    $('.carusel__inner').slick({
+        speed: 1200,
+        adaptiveHeight: true,
+        prevArrow: '<button type="button" class="slick-prev"><img src="../icons/left.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="../icons/right.svg"></button>',
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    dots: true,
+                    arrows: false
+                }
+            }
+        ]
 
-let number = 7;
-const pi = 3.14;
+    });
+});
 
-number = 4;
 
-let leftBorderWidth;
+
+// var name = "Ivan";
+
+// let number = 7;
+// const pi = 3.14;
+
+// number = 4;
+
+// let leftBorderWidth;
 
 
 
@@ -67,10 +88,10 @@ let leftBorderWidth;
 //     console.log(i);
 // }
 
-function logging(a, b) {
-    console.log(a + b)
-}
+// function logging(a, b) {
+//     console.log(a + b)
+// }
 
-logging(3, 5);
-logging(3, 9);
-logging(7, 9);
+// logging(3, 5);
+// logging(3, 9);
+// logging(7, 9);
