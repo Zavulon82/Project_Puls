@@ -14,9 +14,9 @@ $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'zavulon82@gmail.com';                 // Наш логин
-$mail->Password = 'qmlj gchn brou ftsy';                           // Наш пароль от ящика
-$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465;                                    // TCP port to connect to
+$mail->Password = 'mtrn fbzh htyt bguy';                           // Наш пароль от ящика
+$mail->SMTPSecure = 'tsl';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 587;                                    // TCP port to connect to
  
 $mail->setFrom('zavulon82@gmail.com', 'Pulse');   // От кого письмо 
 $mail->addAddress('aleksandre@dio.ge');     // Add a recipient
