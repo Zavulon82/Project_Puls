@@ -105,7 +105,7 @@ $(document).ready(function () {
         e.preventDefault();
 
         if (!$(this).valid()) {
-            return;
+            return
         }
         $.ajax({
             type: "POST",
