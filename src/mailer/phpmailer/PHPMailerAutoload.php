@@ -42,8 +42,33 @@ if (version_compare(PHP_VERSION, '5.1.2', '>=')) {
      * Fall back to traditional autoload for old PHP versions
      * @param string $classname The name of the class to load
      */
-    function __autoload($classname)
-    {
-        PHPMailerAutoload($classname);
+   
+   
+   
+    //  function __autoload($classname)
+    // {
+    //     PHPMailerAutoload($classname);
+    // }
+
+    // spl_autoload_register( function( $class_name );
+// { 
+//     $class_name = strtolower( $class_name );
+//     $path = LIB_PATH.DS."{$class_name}.php"; 
+//     if( file_exists( $path ) ) 
+//         require_once($path); 
+//     else
+//         die( "The file {$class_name}.php could not be found." );
+// });
+
+        spl_autoload_register(function($class){
+    // Load or Require the class File
+    if(is_file("./{$class}.php")){
+        require_once("./{$class}.php");
+    }else{
+        die("./{$class}.php file does not exists.");
     }
+});
+ 
+$myClass = new MyClass;
+echo $myClass->test();
 }
