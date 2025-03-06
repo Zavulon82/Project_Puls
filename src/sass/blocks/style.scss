@@ -1,4 +1,8 @@
 // @use'../base/variables';
+@use '../libs/bootstrap-reboot';
+@use '../libs/font';
+@use '../libs/slick';
+@use '../libs/animate';
 @use '../blocks/buttons.scss';
 @use '../blocks/header.scss';
 @use '../blocks/promo.scss';
